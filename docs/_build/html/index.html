@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to HomeDz’s documentation! &#8212; HomeDz  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">HomeDz  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to HomeDz’s documentation!</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="welcome-to-homedz-s-documentation">
+<h1>Welcome to HomeDz’s documentation!<a class="headerlink" href="#welcome-to-homedz-s-documentation" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="module-src.database.models">
+<span id="api-modules"></span><h1>API Modules<a class="headerlink" href="#module-src.database.models" title="Link to this heading">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="src.database.models.Contact">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.database.models.</span></span><span class="sig-name descname"><span class="pre">Contact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.database.models.Contact" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Base</span></code></p>
+<p>Represents a contact.</p>
+<section id="attributes">
+<h2>Attributes:<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>id<span class="classifier">int</span></dt><dd><p>Unique identifier for the contact.</p>
+</dd>
+<dt>first_name<span class="classifier">str</span></dt><dd><p>First name of the contact.</p>
+</dd>
+<dt>last_name<span class="classifier">str</span></dt><dd><p>Last name of the contact.</p>
+</dd>
+<dt>email<span class="classifier">str</span></dt><dd><p>Email address of the contact.</p>
+</dd>
+<dt>phone_number<span class="classifier">str</span></dt><dd><p>Phone number of the contact.</p>
+</dd>
+<dt>birthday<span class="classifier">date</span></dt><dd><p>Birthday of the contact.</p>
+</dd>
+<dt>additional_info<span class="classifier">str, optional</span></dt><dd><p>Additional information about the contact.</p>
+</dd>
+<dt>owner_id<span class="classifier">int</span></dt><dd><p>ID of the user who owns this contact.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.Contact.additional_info">
+<span class="sig-name descname"><span class="pre">additional_info</span></span><a class="headerlink" href="#src.database.models.Contact.additional_info" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.Contact.birthday">
+<span class="sig-name descname"><span class="pre">birthday</span></span><a class="headerlink" href="#src.database.models.Contact.birthday" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.Contact.email">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#src.database.models.Contact.email" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.Contact.first_name">
+<span class="sig-name descname"><span class="pre">first_name</span></span><a class="headerlink" href="#src.database.models.Contact.first_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.Contact.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#src.database.models.Contact.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.Contact.last_name">
+<span class="sig-name descname"><span class="pre">last_name</span></span><a class="headerlink" href="#src.database.models.Contact.last_name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.Contact.owner">
+<span class="sig-name descname"><span class="pre">owner</span></span><a class="headerlink" href="#src.database.models.Contact.owner" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.Contact.owner_id">
+<span class="sig-name descname"><span class="pre">owner_id</span></span><a class="headerlink" href="#src.database.models.Contact.owner_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.Contact.phone_number">
+<span class="sig-name descname"><span class="pre">phone_number</span></span><a class="headerlink" href="#src.database.models.Contact.phone_number" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="src.database.models.User">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.database.models.</span></span><span class="sig-name descname"><span class="pre">User</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.database.models.User" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Base</span></code></p>
+<p>Represents a user.</p>
+<section id="id1">
+<h2>Attributes:<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>id<span class="classifier">int</span></dt><dd><p>Unique identifier for the user.</p>
+</dd>
+<dt>email<span class="classifier">str</span></dt><dd><p>Email address of the user.</p>
+</dd>
+<dt>hashed_password<span class="classifier">str</span></dt><dd><p>Hashed password of the user.</p>
+</dd>
+<dt>is_verified<span class="classifier">bool</span></dt><dd><p>Verification status of the user.</p>
+</dd>
+<dt>avatar_url<span class="classifier">str, optional</span></dt><dd><p>URL of the user’s avatar.</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.User.avatar_url">
+<span class="sig-name descname"><span class="pre">avatar_url</span></span><a class="headerlink" href="#src.database.models.User.avatar_url" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.User.contacts">
+<span class="sig-name descname"><span class="pre">contacts</span></span><a class="headerlink" href="#src.database.models.User.contacts" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.User.email">
+<span class="sig-name descname"><span class="pre">email</span></span><a class="headerlink" href="#src.database.models.User.email" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.User.hashed_password">
+<span class="sig-name descname"><span class="pre">hashed_password</span></span><a class="headerlink" href="#src.database.models.User.hashed_password" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.User.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#src.database.models.User.id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="src.database.models.User.is_verified">
+<span class="sig-name descname"><span class="pre">is_verified</span></span><a class="headerlink" href="#src.database.models.User.is_verified" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+</dd></dl>
+
+<dl class="py function" id="module-src.repository.users">
+<dt class="sig sig-object py" id="src.repository.users.create_user">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.users.</span></span><span class="sig-name descname"><span class="pre">create_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">AsyncSession</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UserCreate</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.users.create_user" title="Link to this definition">¶</a></dt>
+<dd><p>Create a new user.</p>
+<section id="parameters">
+<h2>Parameters:<a class="headerlink" href="#parameters" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>db<span class="classifier">AsyncSession</span></dt><dd><p>Database session.</p>
+</dd>
+<dt>user<span class="classifier">UserCreate</span></dt><dd><p>The user data.</p>
+</dd>
+</dl>
+</section>
+<section id="returns">
+<h2>Returns:<a class="headerlink" href="#returns" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>User</dt><dd><p>The created user object.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.repository.users.get_user_by_email">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.repository.users.</span></span><span class="sig-name descname"><span class="pre">get_user_by_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">AsyncSession</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.repository.users.get_user_by_email" title="Link to this definition">¶</a></dt>
+<dd><p>Retrieve a user by email.</p>
+<section id="id2">
+<h2>Parameters:<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>db<span class="classifier">AsyncSession</span></dt><dd><p>Database session.</p>
+</dd>
+<dt>email<span class="classifier">str</span></dt><dd><p>Email address to search for.</p>
+</dd>
+</dl>
+</section>
+<section id="id3">
+<h2>Returns:<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>User</dt><dd><p>The user object if found, otherwise None.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+</section>
+<section id="module-src.routes.auth">
+<span id="authentication-api"></span><h1>Authentication API<a class="headerlink" href="#module-src.routes.auth" title="Link to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.auth.login">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.auth.</span></span><span class="sig-name descname"><span class="pre">login</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">OAuth2PasswordRequestForm</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(NoneType)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">AsyncSession</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.auth.login" title="Link to this definition">¶</a></dt>
+<dd><p>Authenticate a user and return a JWT token.</p>
+<section id="id4">
+<h2>Parameters:<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>body<span class="classifier">OAuth2PasswordRequestForm</span></dt><dd><p>The login data.</p>
+</dd>
+<dt>db<span class="classifier">AsyncSession</span></dt><dd><p>Database session.</p>
+</dd>
+</dl>
+</section>
+<section id="id5">
+<h2>Returns:<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>Token</dt><dd><p>The access and refresh tokens.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.auth.read_users_me">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.auth.</span></span><span class="sig-name descname"><span class="pre">read_users_me</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">current_user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">User</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_current_user)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.auth.read_users_me" title="Link to this definition">¶</a></dt>
+<dd><p>Get the current authenticated user.</p>
+<section id="id6">
+<h2>Parameters:<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>current_user<span class="classifier">User</span></dt><dd><p>The current authenticated user.</p>
+</dd>
+</dl>
+</section>
+<section id="id7">
+<h2>Returns:<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>User</dt><dd><p>The user object.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.auth.register">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.auth.</span></span><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UserCreate</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">AsyncSession</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.auth.register" title="Link to this definition">¶</a></dt>
+<dd><p>Register a new user.</p>
+<section id="id8">
+<h2>Parameters:<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>user<span class="classifier">UserCreate</span></dt><dd><p>The user registration data.</p>
+</dd>
+<dt>db<span class="classifier">AsyncSession</span></dt><dd><p>Database session.</p>
+</dd>
+</dl>
+</section>
+<section id="id9">
+<h2>Returns:<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>User</dt><dd><p>The created user object.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.auth.upload_avatar">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.auth.</span></span><span class="sig-name descname"><span class="pre">upload_avatar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">UploadFile</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">File(PydanticUndefined)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_user</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">User</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_current_user)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">AsyncSession</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.auth.upload_avatar" title="Link to this definition">¶</a></dt>
+<dd><p>Upload an avatar for the current user.</p>
+<section id="id10">
+<h2>Parameters:<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>file<span class="classifier">UploadFile</span></dt><dd><p>The avatar file to upload.</p>
+</dd>
+<dt>current_user<span class="classifier">User</span></dt><dd><p>The current authenticated user.</p>
+</dd>
+<dt>db<span class="classifier">AsyncSession</span></dt><dd><p>Database session.</p>
+</dd>
+</dl>
+</section>
+<section id="id11">
+<h2>Returns:<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>dict</dt><dd><p>The URL of the uploaded avatar.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="src.routes.auth.verify_email">
+<em class="property"><span class="k"><span class="pre">async</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.routes.auth.</span></span><span class="sig-name descname"><span class="pre">verify_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">AsyncSession</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">Depends(get_db)</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.routes.auth.verify_email" title="Link to this definition">¶</a></dt>
+<dd><p>Verify a user’s email address.</p>
+<section id="id12">
+<h2>Parameters:<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>token<span class="classifier">str</span></dt><dd><p>The verification token.</p>
+</dd>
+<dt>db<span class="classifier">AsyncSession</span></dt><dd><p>Database session.</p>
+</dd>
+</dl>
+</section>
+<section id="id13">
+<h2>Returns:<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h2>
+<dl class="simple">
+<dt>dict</dt><dd><p>A message indicating the result of the verification.</p>
+</dd>
+</dl>
+</section>
+</dd></dl>
+
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="#">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Welcome to HomeDz’s documentation!</a></li>
+<li><a class="reference internal" href="#module-src.database.models">API Modules</a><ul>
+<li><a class="reference internal" href="#src.database.models.Contact"><code class="docutils literal notranslate"><span class="pre">Contact</span></code></a><ul>
+<li><a class="reference internal" href="#src.database.models.Contact.additional_info"><code class="docutils literal notranslate"><span class="pre">Contact.additional_info</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.Contact.birthday"><code class="docutils literal notranslate"><span class="pre">Contact.birthday</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.Contact.email"><code class="docutils literal notranslate"><span class="pre">Contact.email</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.Contact.first_name"><code class="docutils literal notranslate"><span class="pre">Contact.first_name</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.Contact.id"><code class="docutils literal notranslate"><span class="pre">Contact.id</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.Contact.last_name"><code class="docutils literal notranslate"><span class="pre">Contact.last_name</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.Contact.owner"><code class="docutils literal notranslate"><span class="pre">Contact.owner</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.Contact.owner_id"><code class="docutils literal notranslate"><span class="pre">Contact.owner_id</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.Contact.phone_number"><code class="docutils literal notranslate"><span class="pre">Contact.phone_number</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#src.database.models.User"><code class="docutils literal notranslate"><span class="pre">User</span></code></a><ul>
+<li><a class="reference internal" href="#src.database.models.User.avatar_url"><code class="docutils literal notranslate"><span class="pre">User.avatar_url</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.User.contacts"><code class="docutils literal notranslate"><span class="pre">User.contacts</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.User.email"><code class="docutils literal notranslate"><span class="pre">User.email</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.User.hashed_password"><code class="docutils literal notranslate"><span class="pre">User.hashed_password</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.User.id"><code class="docutils literal notranslate"><span class="pre">User.id</span></code></a></li>
+<li><a class="reference internal" href="#src.database.models.User.is_verified"><code class="docutils literal notranslate"><span class="pre">User.is_verified</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#src.repository.users.create_user"><code class="docutils literal notranslate"><span class="pre">create_user()</span></code></a></li>
+<li><a class="reference internal" href="#src.repository.users.get_user_by_email"><code class="docutils literal notranslate"><span class="pre">get_user_by_email()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-src.routes.auth">Authentication API</a><ul>
+<li><a class="reference internal" href="#src.routes.auth.login"><code class="docutils literal notranslate"><span class="pre">login()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.auth.read_users_me"><code class="docutils literal notranslate"><span class="pre">read_users_me()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.auth.register"><code class="docutils literal notranslate"><span class="pre">register()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.auth.upload_avatar"><code class="docutils literal notranslate"><span class="pre">upload_avatar()</span></code></a></li>
+<li><a class="reference internal" href="#src.routes.auth.verify_email"><code class="docutils literal notranslate"><span class="pre">verify_email()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">HomeDz  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to HomeDz’s documentation!</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Erozist.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+  </body>
+</html>
