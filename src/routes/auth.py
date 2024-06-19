@@ -3,11 +3,15 @@ from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.ext.asyncio import AsyncSession
 from datetime import timedelta
 from src.database.db import get_db
-from src.schemas.schemas import UserCreate, User, Token
+from src.schemas.schemas import UserCreate, User, Token, UserBase
 from src.repository import users
 from src.utils.utils import create_access_token, create_refresh_token, authenticate_user, get_current_user, decode_token
 from src.utils.cloudinary import upload_image
 from src.utils.email import EmailSchema, send_email
+
+import logging
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(
     prefix="/auth",
@@ -34,8 +38,10 @@ async def register(user: UserCreate, db: AsyncSession = Depends(get_db)):
     User
         The created user object.
     """
+    logger.info(f"Registering user: {user.email}")
     db_user = await users.get_user_by_email(db, email=user.email)
     if db_user:
+        logger.warning(f"Email already registered: {user.email}")
         raise HTTPException(status_code=status.HTTP_409_CONFLICT, detail="Email already registered")
     new_user = await users.create_user(db=db, user=user)
     verification_url = f"http://http://127.0.0.1:8000/verify?token={create_access_token({'sub': user.email})}"
@@ -141,8 +147,8 @@ async def upload_avatar(file: UploadFile = File(...), current_user: User = Depen
     return {"avatar_url": url}
 
 
-# @router.post("/send_email")
-# async def send_email(user: UserBase):
+# @router.post("/send_verify_email")
+# async def send_verify_email(user: UserBase):
 #     verification_url = f"http://http://127.0.0.1:8000/verify?token={create_access_token({'sub': user.email})}"
 #     email = EmailSchema(email=[user.email])
 #     await send_email(email, "Verify your email", f"Please click the link to verify your email: {verification_url}")
