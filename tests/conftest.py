@@ -39,15 +39,11 @@ def init_models_wrap():
 
 @pytest.fixture(scope="module")
 def client():
-    # Dependency override
 
     async def override_get_db():
         session = TestingSessionLocal()
         try:
             yield session
-        except Exception as err:
-            print(err)
-            await session.rollback()
         finally:
             await session.close()
 
@@ -56,7 +52,7 @@ def client():
     yield TestClient(app)
 
 
-@pytest_asyncio.fixture()
-async def get_token():
-    token = await create_access_token(data={"sub": test_user["email"]})
+@pytest_asyncio.fixture(scope="module")
+def get_token():
+    token = create_access_token(data={"sub": test_user["email"]})
     return token

@@ -12,7 +12,7 @@ async def get_contacts(db: AsyncSession, skip: int = 0, limit: int = 10, owner_i
     return result.scalars().all()
 
 async def create_contact(db: AsyncSession, contact: ContactCreate, owner_id: int):
-    db_contact = Contact(**contact.dict(), owner_id=owner_id)
+    db_contact = Contact(**contact.model_dump(), owner_id=owner_id)
     db.add(db_contact)
     await db.commit()
     await db.refresh(db_contact)
@@ -26,7 +26,7 @@ async def update_contact(db: AsyncSession, contact_id: int, contact: ContactUpda
     db_contact = await get_contact(db, contact_id)
     if db_contact is None or db_contact.owner_id != owner_id:
         return None
-    for key, value in contact.dict().items():
+    for key, value in contact.model_dump().items():
         setattr(db_contact, key, value)
     db.add(db_contact)
     await db.commit()
